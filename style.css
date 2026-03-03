@@ -1,0 +1,102 @@
+/* Genel Ayarlar */
+body {
+    padding-top: 70px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fc;
+    color: #333;
+}
+
+/* HERO ALANI */
+ .hero {
+    min-height: 65vh;   /* 100vh yerine 65vh */
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #61656b, #b1b4b3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    animation: fadeDown 1s ease-in-out;
+}
+
+.hero p {
+    animation: fadeUp 1.2s ease-in-out;
+}
+
+.hero .btn {
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* ANİMASYON */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ABOUT CARD */
+.about-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* BAŞLIKLAR */
+h2 {
+    position: relative;
+    display: inline-block;
+}
+
+ h2::after {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background: #253547;
+    position: absolute;
+    left: 20%;
+    bottom: -8px;
+    border-radius: 10px;
+}
+
+/* PROJE KARTLARI */
+.project-card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* BUTTONLAR */
+.btn-primary {
+    background-color: #253547;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #253547;
+}
+
+/* FOOTER */
+footer {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+} 
